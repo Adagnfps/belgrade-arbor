@@ -1,0 +1,215 @@
+{
+  "Introduction": {
+    "Screen1": {
+      "tag": "BELGRADE ARBOR DESIGN",
+      "heading": "The visual identity of Belgrade Arbor is defined by an elegant facade inspired by the form of a tree canopy, a symbol of growth, balance, and longevity.",
+      "cta": "Explore in 3d"
+    },
+    "Screen2": {
+      "heading": "Belgrade Arbor isn't just another addition to the skyline; it's a curated urban ecosystem that evolves with the rhythm of the city.",
+      "cta": "Explore in 3d"
+    },
+    "Screen3": {
+      "heading": "A New Chapter in Prestigious Living",
+      "paragraph": "A clear architectural vision, a carefully selected location, and thoughtfully curated amenities make Belgrade Arbor a residential destination where quality, comfort, and long-term value naturally converge.",
+      "cta": "Explore Our Apartments"
+    }
+  },
+  "Location": {
+    "paragraph": "At one of New Belgrade's most dynamic locations, on Bulevar heroja sa Košara, Belgrade Arbor is taking shape as a contemporary residential and commercial development that seamlessly brings together refined architecture, everyday comfort, and enduring value.",
+    "heading": "Location"
+  },
+  "Around": {
+    "whatsAround": "What's around",
+    "locations": [
+      {
+        "name": "Railway Station",
+        "carDistance": "1 min",
+        "walkDistance": "3 min",
+        "description": "Tošin Bunar is a railway station located in the municipality of Novi Beograd. It is served by BG Voz. The railroad continues to Zemun in one direction, and New Belgrade and Old Belgrade in the other direction. Tošin Bunar railway station consists of 2 railway tracks with 2 side platforms.",
+        "image": "/home/around/tosin.webp"
+      },
+      {
+        "name": "Savremena Elementary School",
+        "carDistance": "1 min",
+        "walkDistance": "2 min",
+        "description": "Savremena Elementary School is a part of an education system unique in the region, with over 20 years' experience. It was built on the foundation of Savremena International School, whose results serve as the best proof of their leadership position at all levels of education.",
+        "image": "/home/around/savremena.webp"
+      },
+      {
+        "name": "West 65",
+        "carDistance": "1 min",
+        "walkDistance": "3 min",
+        "description": "West 65 is a modern residential and business complex located in New Belgrade's Block 65, known for its luxury apartments, shopping center, and a 155-meter skyscraper tower. The complex includes multiple residential buildings, pedestrian areas, restaurants, shops, and recreational facilities, all positioned in a well-connected part of the city.",
+        "image": "/home/around/west.webp"
+      },
+      {
+        "name": "Airport City",
+        "carDistance": "2 min",
+        "walkDistance": "4 min",
+        "description": "Airport City Belgrade is the largest business and commercial complex in Belgrade. It consists mainly of modern office buildings that host international companies, restaurants, cafes, shops, and other business-related services. Developed as one of the first modern business parks in Serbia, Airport City has become an important corporate and economic hub in Belgrade.",
+        "image": "/home/around/airportcity.webp"
+      },
+      {
+        "name": "Hangar Food Market",
+        "carDistance": "2 min",
+        "walkDistance": "4 min",
+        "description": "Hangar Food Market at Airport City Belgrade is a modern food and social hub that brings together a variety of local and international cuisines in one vibrant space. With its contemporary design and lively atmosphere, it has become a popular destination for business meetings, casual dining, and after-work gatherings.",
+        "image": "/home/around/hangar.webp"
+      },
+      {
+        "name": "Airport Nikola Tesla",
+        "carDistance": "9 min",
+        "walkDistance": null,
+        "description": "Nikola Tesla Airport, officially Belgrade Nikola Tesla Airport, is the main international airport in Serbia. It serves as the country's busiest airport and the primary hub for Air Serbia, connecting Belgrade with destinations across Europe, Middle East, North America, and other regions. Named after the famous Serbian-American inventor Nikola Tesla, the airport has undergone major modernization and expansion in recent years to support growing passenger traffic.",
+        "image": "/home/around/aerodrom.webp"
+      }
+    ]
+  },
+  "Residence": {
+    "heading": "Residences",
+    "paragraph": "Designed with contemporary living in mind, each apartment at Belgrade Arbor balances functionality, comfort, and aesthetics. Open-plan layouts, excellent natural light, refined materials, and carefully considered details create spaces that feel both welcoming and enduring."
+  },
+  "ResidenceOptions": {
+    "residenceTypes": [
+      {
+        "name": "Studio",
+        "unitsAvailable": 80,
+        "withoutLivingRoom": false,
+        "images": [
+          "/home/residences-options/1.webp",
+          "/home/residences-options/2.webp"
+        ]
+      },
+      {
+        "name": "One Bedroom",
+        "unitsAvailable": 22,
+        "withoutLivingRoom": true,
+        "images": [
+          "/home/residences-options/3.webp",
+          "/home/residences-options/4.webp"
+        ]
+      },
+      {
+        "name": "Two Bedroom",
+        "unitsAvailable": 78,
+        "withoutLivingRoom": false,
+        "images": [
+          "/home/residences-options/5.webp",
+          "/home/residences-options/6.webp",
+          "/home/residences-options/8.webp"
+        ]
+      },
+      {
+        "name": "Three Bedroom",
+        "unitsAvailable": 16,
+        "withoutLivingRoom": false,
+        "images": [
+          "/home/residences-options/9.webp",
+          "/home/residences-options/10.webp",
+          "/home/residences-options/7.webp"
+        ]
+      },
+      {
+        "name": "Four Bedroom",
+        "unitsAvailable": 12,
+        "withoutLivingRoom": false,
+        "images": [
+          "/home/residences-options/11.webp",
+          "/home/residences-options/12.webp"
+        ]
+      }
+    ],
+    "viewAll": "View all",
+    "unitsAvailable": "units available",
+    "cta": "Submit a request",
+    "tag": "Residences"
+  },
+  "BusinessSpaces": {
+    "heading": "Office spaces and retails",
+    "paragraph": "Business spaces and retail units at Belgrade Arbor are designed for companies of all sizes that see their business address as more than just a location—it is a reflection of their identity, reputation, and long-term vision."
+  },
+  "BusinessSpacesOptions": {
+    "heading": "Business spaces",
+    "cta": "Find out more",
+    "officeSpaces": "retail and hospitality units",
+    "businessSpaces": [
+      {
+        "name": "Wing A",
+        "unitsAvailable": 11,
+        "description": "Adaptable to various types of businesses, with an optimal layout and natural lighting that fosters a productive work atmosphere."
+      },
+      {
+        "name": "Wing B",
+        "unitsAvailable": 11,
+        "description": "Comfortable and functional, suitable for offices, coworking, or showrooms, with easy access and a professional environment."
+      },
+      {
+        "name": "Wing V",
+        "unitsAvailable": 9,
+        "description": "Located along an impressive, representative entrance with a glass curtain wall. This business wing contains no residential units, offering business tenants an added level of privacy and a professional setting."
+      },
+      {
+        "name": "Retail",
+        "unitsAvailable": 18,
+        "description": "Belgrade Arbor complex features 18 retail and hospitality units distributed evenly across Wing A and Wing B. All premises are situated on the ground floor at the building's front, ensuring maximum visibility and direct street access."
+      }
+    ]
+  },
+  "Roots": {
+    "tag": "The way of living",
+    "heading": "Your roots",
+    "description": "In Belgrade Arbor, each residence is crafted not merely for living, but as a space that evolves alongside you",
+    "cta": "Explore residences"
+  },
+  "Amenities": {
+    "tag": "WHAT SETS US APART",
+    "heading": "Amenities",
+    "description": "Belgrade Arbor is more than a residence. It features two private gyms, two exclusive rooftop parks for residents and their guests, and a top-floor café-restaurant. These are curated spaces for unwinding and socializing a true sanctuary from the urban hustle, right at your doorstep."
+  },
+  "AmenitiesOptions": {
+    "heading": "Amenities",
+    "amenitiesTypes": [
+      {
+        "name": "Rooftop",
+        "description": "A place designed for an active and balanced lifestyle. A modernly equipped space that allows you to stay dedicated to yourself and your routines, with the comfort provided by life within the Belgrade Arbor complex.",
+        "images": [
+          "/home/amenities-options/rooftop.webp"
+        ]
+      },
+      {
+        "name": "Private fitness space",
+        "description": "Your personal space for movement and balance. Designed in line with modern living, the in-house gym lets you stay focused on yourself, without leaving the complex and without distractions.",
+        "images": [
+          "/home/amenities-options/fitness.webp"
+        ]
+      },
+      {
+        "name": "Garage",
+        "description": "Coming home begins without searching for a space. Spread across three underground levels, the garage offers security, privacy and everyday comfort, with your vehicle always within reach, protected and available at any moment, without leaving the complex.",
+        "images": [
+          "/home/amenities-options/parking.webp"
+        ]
+      },
+      {
+        "name": "Restaurant",
+        "description": "A place for favourite rituals and moments of pause. Set on the top, recessed floor with a panoramic view of New Belgrade, the restaurant lets you enjoy good company and refined flavours, away from the city bustle, just steps from your home.",
+        "images": [
+          "/home/amenities-options/interior.webp"
+        ]
+      }
+    ]
+  },
+  "Horizontal": {
+    "heading": "View from above"
+  },
+  "Installment": {
+    "heading": "Installment plan",
+    "phase1": "Pre-contract",
+    "phase2": "Zero level",
+    "phase3": "Structure completed",
+    "phase4": "Building 80% complete",
+    "phase5": "Technical acceptance",
+    "cta": "Building permit"
+  }
+}

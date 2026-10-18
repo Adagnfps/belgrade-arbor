@@ -1,0 +1,685 @@
+{
+  "formats": "$undefined",
+  "locale": "en",
+  "messages": {
+    "Contact": {
+      "title": "Submit",
+      "request": "a request",
+      "description": "For more information regarding available properties at Belgrade Arbor, please fill out the form and we will contact you shortly.",
+      "tabs": {
+        "request": "Request",
+        "callback": "Callback",
+        "business": "Business"
+      },
+      "formFields": {
+        "firstName": {
+          "label": "First name",
+          "error": "First name is required"
+        },
+        "lastName": {
+          "label": "Last name",
+          "error": "Last name is required"
+        },
+        "fullName": {
+          "label": "Full name",
+          "error": "Full name is required"
+        },
+        "companyName": {
+          "label": "Company name",
+          "error": "Company name is required"
+        },
+        "email": {
+          "label": "Email",
+          "errorInvalid": "Invalid email address",
+          "error": "Email is required"
+        },
+        "phone": {
+          "label": "Phone",
+          "error": "Phone is required"
+        },
+        "time": {
+          "label": "Call Time",
+          "error": "Please select a time"
+        },
+        "whatsappConsent": {
+          "error": "Data protection notice must be accepted",
+          "label": "I want to receive notifications via WhatsApp and Viber"
+        },
+        "privacyConsent": {
+          "error": "Privacy notice must be accepted",
+          "label": "I have read and understand the <privacyLink>privacy policy</privacyLink>"
+        },
+        "marketingConsent": {
+          "error": "Marketing notice must be accepted",
+          "label": "I want to be informed about other projects of companies operating within Perose Property Group"
+        },
+        "submitRequest": "Submit a request",
+        "submitCallback": "Submit for a callback",
+        "submitting": "Submitting…",
+        "submitError": "Something went wrong. Please try again.",
+        "contactParagraph": "For direct inquiries, our team is available at"
+      },
+      "thankYou": {
+        "title": "Thank you for",
+        "reachingOut": "reaching out to us.",
+        "contactSoon": "We will contact you soon!",
+        "closePage": "Close page"
+      }
+    },
+    "3DResidencies": {
+      "menu": {
+        "overlay": {
+          "none": "No overlay",
+          "residences": "Residences",
+          "retail": "Business"
+        },
+        "filter": "Filters",
+        "resetView": "Reset View"
+      },
+      "navigation": {
+        "navigation": "Navigation",
+        "angle": "Select view angle"
+      },
+      "retailPopup": {
+        "retail": "Retail",
+        "office": "Office",
+        "basement": "Basement",
+        "groundFloor": "Ground floor",
+        "layout": "Layout",
+        "floor": "Floor",
+        "floorNumber": "{floor, selectordinal, one {#st} two {#nd} few {#rd} other {#th}} floor",
+        "size": "Size",
+        "type": "Type",
+        "wing": "Wing",
+        "businessSpace": "Business space",
+        "submitRequest": "Submit a request",
+        "description": "Thoughtfully designed commercial spaces with maximum visibility and excellent connectivity. Flexible layouts adapt to your business needs, whether you are growing a company or opening a new location.",
+        "share": "Share",
+        "copied": "Copied!",
+        "resetFilters": "Reset Filters",
+        "results": "Results"
+      }
+    },
+    "AboutInvestor": {
+      "Hero": {
+        "heading": "ABOUT THE INVESTOR",
+        "tag": "Perose Property Group",
+        "paragraph": "Perose Property Group is a holding company specializing in the development, investment, and management of residential and commercial real estate projects across Serbia. Our portfolio includes developments such as AD Residence Zemun, Old City Residence and Harmony Homes in Kragujevac.",
+        "cta": "Contact us"
+      },
+      "Static1": {
+        "heading": "Each of our projects is defined by contemporary architecture, high construction standards, and carefully selected locations that provide long-term value for both owners and occupants.",
+        "paragraph": "Our mission is to create lasting value through innovative and sustainable developments that enhance urban environments and improve quality of life."
+      },
+      "Projects": {
+        "projects": [
+          {
+            "name": "Belgrade Arbor",
+            "location": "BELGRADE",
+            "image": "/about-the-investor/slide1.webp",
+            "descriptions": [
+              "Belgrade Arbor is one of our flagship projects and reflects our philosophy that every square meter should contribute to functionality, quality, and long-term value. Through a consistent approach to design, the careful selection of partners, and a strong commitment to detail, we are creating a modern mixed-use complex that meets the demands of contemporary living and working while contributing to the evolving urban identity of Belgrade."
+            ]
+          },
+          {
+            "name": "AD Residence",
+            "location": "BELGRADE",
+            "image": "/about-the-investor/slide6.webp",
+            "descriptions": [
+              "AD Residence is a modern residential and commercial complex, located in a tranquil part of Zemun, designed to combine quality construction, functional design, and everyday comfort. The project consists of two buildings offering a diverse selection of residential units and business premises, along with a spacious three-level underground garage. Thanks to its carefully chosen location, proximity to the Danube, and excellent connectivity to the rest of the city, AD Residence is an ideal choice for those seeking a modern home in a peaceful setting without giving up any advantages of urban living."
+            ]
+          },
+          {
+            "name": "Harmony Homes",
+            "location": "Kragujevac",
+            "image": "/about-the-investor/slide2.webp",
+            "descriptions": [
+              "Harmony Homes is a modern residential complex in Kragujevac, located between Gavrila Principa and Daničićeva streets. The development consists of two buildings featuring 86 apartments, a commercial unit, and dedicated green spaces designed for family-oriented living.",
+              "To ensure convenience for residents and visitors, the project includes extensive parking facilities, featuring a secure underground garage and accessible parking spaces. With its contemporary architecture and practical layouts, Harmony Homes balances urban functionality with high-quality, modern comfort."
+            ]
+          },
+          {
+            "name": "Stari Mlin",
+            "location": "Kragujevac",
+            "image": "/about-the-investor/slide4.webp",
+            "descriptions": [
+              "Developed by Perose Real Estate at Dr Jovana Ristića 170 in Kragujevac, Stari Mlin is a contemporary mixed-use complex built on the historic site of the city's former mill. The development currently features two buildings under construction with 34 apartments, two commercial spaces, and 42 parking spots. A planned third building, currently in the design phase, will add an underground garage and 12 more residential units.",
+              "Scheduled for completion in late 2027, the project blends local heritage with modern architecture to deliver high-quality urban living and long-term value."
+            ]
+          },
+          {
+            "name": "Old City Residence",
+            "location": "Kragujevac",
+            "image": "/about-the-investor/slide3.webp",
+            "descriptions": [
+              "Old City Residence is a landmark mixed-use development planned for a prime location in Kragujevac. Scheduled to break ground in late 2026, the project combines modern architecture with long-term value, creating a vibrant environment for contemporary lifestyles and businesses.",
+              "The development will feature 169 residential units, multiple commercial spaces, and 222 garage parking spaces distributed across two underground levels to ensure maximum convenience for future residents and visitors."
+            ]
+          },
+          {
+            "name": "Red Cross Center",
+            "location": "Kragujevac",
+            "image": "/about-the-investor/slide5.webp",
+            "descriptions": [
+              "Developed in cooperation with the City Red Cross Organization, the new Red Cross Center in Kragujevac replaces outdated facilities with a modern, functional space. Located at Vojvode Putnika 4 and Luja Pastera Street, the 1,198 m² fully accessible development includes the reconstruction and expansion of the existing building.",
+              "The new hub will feature modern offices, a public kitchen, spaces for humanitarian programs, and dedicated areas for volunteer training, strengthening the organization's capacity to serve the local community."
+            ]
+          }
+        ]
+      },
+      "Static2": {
+        "heading": "At Perose Property Group, we believe that successful developments are built on a foundation of quality, responsibility, and long-term vision.",
+        "description": "Through every residential, commercial, and mixed-use project we undertake, our goal is to create spaces that deliver lasting value, enhance urban environments, and improve the everyday lives of the people who use them.",
+        "description2": "As we continue to grow, we remain committed to the same principles that define our work today - thoughtful planning, high construction standards, sustainable development, and attention to detail. Looking ahead, we will continue to invest in innovative projects that contribute to the future of Serbia's cities while building communities designed for generations to come."
+      }
+    },
+    "RetailSpaces": {
+      "Hero": {
+        "heading": "BUSINESS SPACES",
+        "paragraph": "A prestigious address where business feels at home. Street-level retail and hospitality units meet flexible offices above, each shaped by refined architecture, natural light, and direct access to the heart of New Belgrade."
+      }
+    },
+    "FiltersResidence": {
+      "filters": "Filters",
+      "all": "All",
+      "features": "Features",
+      "garden": "Garden",
+      "balcony": "Balcony",
+      "wing": "Wing",
+      "floor": "FLOOR",
+      "resetFilters": "Reset Filters",
+      "results": "Results",
+      "seeMore": "See more",
+      "noResults": "No results for the selected filters."
+    },
+    "FiltersRetail": {
+      "heading": "Filters",
+      "floor": "FLOOR",
+      "all": "All",
+      "offices": "Offices",
+      "retail": "Retail",
+      "wing": "Wing",
+      "resetFilters": "Reset filters",
+      "results": "Results",
+      "seeMore": "See more",
+      "noResults": "No results for the selected filters."
+    },
+    "ResidenceCard": {
+      "rooms": "rooms",
+      "floor": "floor",
+      "basement": "Basement",
+      "groundFloor": "Ground floor",
+      "seeMore": "See more"
+    },
+    "RetailCard": {
+      "basement": "Basement",
+      "groundFloor": "Ground floor",
+      "floor": "floor"
+    },
+    "Business": {
+      "Hero": {
+        "heading": "BUSINESS SPACES",
+        "subheading": "Step Into New Successes at Belgrade Arbor Address!",
+        "paragraph": "In modern business, a workspace is more than just walls - it defines a company's identity, culture, and future. Seeking an environment that inspires teams, facilitates collaboration, and supports growth, companies look for locations that combine prestige, functionality, flexible layouts, and connectivity to key business hubs. We believe Belgrade Arbor is the perfect answer to your business needs.",
+        "cta": "View promo video"
+      },
+      "Introduction": {
+        "Screen1": {
+          "tag": "Exceptional Connectivity Across the City",
+          "heading": "The office spaces at Belgrade Arbor are carefully designed for companies seeking an exclusive location, functionality, and long-termvalue."
+        },
+        "Screen2": {
+          "paragraph1": "Situated in the heart of New Belgrade's most dynamic business district, the complex is just steps away from key postal centers, Airport City* and Hangar*. With immediate access to the Tošin bunar railway station and excellent connections to Nikola Tesla Airport, Belgrade Arbor is the ideal choice for businesses that value both image andaccessibility.",
+          "paragraph2": "Another advantage is the nearby Savremena Elementary School, offering access to a modern, stimulating and innovativeeducation.",
+          "note1": "*Airport City Belgrade is the most prestigious multi-purpose business facility and the largest business park inSerbia.",
+          "note2": "*Hangar is a vibrant urban destination combining restaurants, event spaces, and creative venues."
+        },
+        "Screen3": {
+          "heading": "Contemporary Architecture & Sophisticated Interiors",
+          "paragraph": "With thoughtfully designed office spaces, an exceptional location in New Belgrade, and top-notch amenities within the complex, Belgrade Arbor offers workspaces where productivity, professional image, and the everyday work experience come together in a unique businessecosystem.",
+          "cta": "Explore spaces"
+        }
+      },
+      "BusinessSpacesOptions": {
+        "businessSpaces": [
+          {
+            "name": "Wing A",
+            "unitsAvailable": 11,
+            "description": "Adaptable to various types of businesses, with an optimal layout and natural lighting that fosters a productive work atmosphere."
+          },
+          {
+            "name": "Wing B",
+            "unitsAvailable": 11,
+            "description": "Comfortable and functional, suitable for offices, coworking, or showrooms, with easy access and a professional environment."
+          },
+          {
+            "name": "Wing V",
+            "unitsAvailable": 9,
+            "description": "Located along an impressive, representative entrance with a glass curtain wall. This business wing contains no residential units, offering business tenants an added level of privacy and a professional setting."
+          },
+          {
+            "name": "Retail",
+            "unitsAvailable": 18,
+            "description": "Belgrade Arbor complex features 18 retail and hospitality units distributed evenly across Wing A and Wing B. All premises are situated on the ground floor at the building's front, ensuring maximum visibility and direct street access."
+          }
+        ],
+        "office": "office",
+        "spaces": "spaces",
+        "brochure": "BROCHURE",
+        "inquire": "Inquire",
+        "mobileTag": "Business spaces"
+      },
+      "Panorama": {
+        "heading": "Favorite Rituals and Culinary Experiences with Panoramic View",
+        "paragraph1": "Belgrade Arbor features top-notch amenities within the complex, including a café restaurant on the top recessed floor, as well as close proximity to other business and commercial areas.",
+        "paragraph2": "All of this contributes to creating a complete business ecosystem, where work, meetings, and all operational processes take place in one convenient location.",
+        "paragraph3": "The space's authenticity and charm are elevated by an open panoramic view of New Belgrade, creating an ideal setting for informal meetings, networking, and engaging conversations in a pleasant and inspiring atmosphere.",
+        "cta": "Explore spaces"
+      }
+    },
+    "SingleBusinessSpace": {
+      "Hero": {
+        "office": "Office",
+        "retail": "Retail",
+        "size": "Size",
+        "floor": "Floor",
+        "type": "Type",
+        "description": "Thoughtfully designed commercial spaces with maximum visibility and excellent connectivity. Flexible layouts adapt to your business needs, whether you are growing a company or opening a new location.",
+        "wing": "Wing",
+        "submitRequest": "Submit a request",
+        "share": "Share",
+        "copied": "Copied!",
+        "windowPrompt": "Copy this link:",
+        "back": "Back",
+        "layout": "Layout",
+        "floorPlan": "floor",
+        "basement": "Basement",
+        "groundFloor": "Ground floor",
+        "officeDescription": "Office spaces designed for a variety of business ideas and needs, featuring an excellent location, high visibility, and modern design that leaves a strong impression. The flexible layout allows you to shape the space according to your way of doing business—whether you're developing an existing company, expanding your team, or starting a new business venture.",
+        "retailDescription": "Retail units designed for a variety of business ideas and needs, featuring an excellent location, high visibility, and modern design that leaves a strong impression. The flexible layout allows you to shape the space according to your way of doing business—whether you're developing an existing company, expanding your team, or starting a new business venture."
+      },
+      "Message": {
+        "tag": "Vision",
+        "heading": "At Belgrade Arbor, your business takes root at one of New Belgrade's most prestigious addresses. Flexible retail units and offices, shaped by refined architecture and natural light, ready to be tailored to the way you work.",
+        "paragraph": "Flexible layouts allow you to shape the space according to your way of doing business—whether you're developing an existing company, expanding your team, or starting a new business venture."
+      },
+      "Gallery": {
+        "heading": "Gallery"
+      },
+      "Similar": {
+        "heading": "Similar",
+        "cta": "See more"
+      }
+    },
+    "Residences": {
+      "Hero": {
+        "heading": "Residences",
+        "paragraph": "Look farther with a fuller palette of possibilities. A bold architectural expression, with a facade inspired by tree canopies."
+      }
+    },
+    "SingleResidence": {
+      "Hero": {
+        "title": "Residence",
+        "floorArea": "Total floor area",
+        "entrance": "Entrance",
+        "laundry": "Laundry room",
+        "bathroom1": "Bathroom",
+        "bathroom2": "Bathroom 2",
+        "kitchen": "Kitchen",
+        "livingRoom": "Living room",
+        "livingDining": "Living & dining room",
+        "terrace": "Terrace",
+        "masterTerrace": "Terrace - Master bedroom",
+        "bedroomTerrace": "Terrace - Bedroom",
+        "bedroomsTerrace": "Terrace - Bedrooms",
+        "gardenTerrace": "Terrace - Garden",
+        "hallway1": "Hallway",
+        "hallway2": "Hallway 2",
+        "toilet": "Toilet",
+        "bedroom1": "Bedroom",
+        "bedroom2": "Bedroom 2",
+        "bedroom3": "Bedroom 3",
+        "masterBedroom": "Master bedroom",
+        "less": "Less",
+        "more": "More",
+        "layout": "Layout",
+        "floor": "Floor",
+        "back": "Back",
+        "request": "Submit a request",
+        "share": "Share",
+        "copied": "Copied!",
+        "wing": "Wing",
+        "balcony": "Balcony",
+        "garden": "Garden",
+        "residenceTypeText": {
+          "one": "A single, light-filled space where living, kitchen, and rest flow together, opening onto a private terrace. An effortless home for one, a city base, or a dependable rental.",
+          "onePLus": "An open living and dining area paired with a separate, flexible space that adapts to a study, nursery, or quiet retreat. Room to grow, scaled for a first home or a smart investment.",
+          "two": "An open living, kitchen, and dining zone alongside a private bedroom, with a terrace that carries the space outdoors. A balanced, comfortable home for couples and small families.",
+          "twoPlus": "A generous living area, a private bedroom, and an added half-room that becomes a home office, guest space, or children's room. Flexible square meters for households that need a little more.",
+          "three": "A spacious open living and dining heart with two private bedrooms and a terrace, shaped for everyday family life with room to breathe. Daylight from more than one side wherever the layout allows.",
+          "four": "The most spacious layout, with an expansive living zone, three private bedrooms, and a wide terrace for the whole household. The project's largest homes, made for those who want room without compromise."
+        }
+      },
+      "Message": {
+        "tag": "Designed around you",
+        "heading": "Every residence is shaped around the way you live, with open layouts, abundant daylight, and refined materials chosen to age beautifully. Wherever the architecture allows, dual orientation draws light from more than one side and opens the home to the New Belgrade skyline. Muted tones, soft curves, and room to breathe.",
+        "paragraph": "Dual orientation fills the interior with light from multiple directions and opens up views towards the panorama of New Belgrade. Subdued tones, soft lines, and carefully crafted spaces create an atmosphere of serenity, comfort, and ease, making each home a place where daily life unfolds naturally and without compromise."
+      },
+      "Gallery": {
+        "heading": "Gallery"
+      },
+      "Similar": {
+        "heading": "Similar",
+        "cta": "See more"
+      }
+    },
+    "Home": {
+      "Introduction": {
+        "Screen1": {
+          "tag": "BELGRADE ARBOR DESIGN",
+          "heading": "The visual identity of Belgrade Arbor is defined by an elegant facade inspired by the form of a tree canopy, a symbol of growth, balance, and longevity.",
+          "cta": "Explore in 3d"
+        },
+        "Screen2": {
+          "heading": "Belgrade Arbor isn't just another addition to the skyline; it's a curated urban ecosystem that evolves with the rhythm of the city.",
+          "cta": "Explore in 3d"
+        },
+        "Screen3": {
+          "heading": "A New Chapter in Prestigious Living",
+          "paragraph": "A clear architectural vision, a carefully selected location, and thoughtfully curated amenities make Belgrade Arbor a residential destination where quality, comfort, and long-term value naturally converge.",
+          "cta": "Explore Our Apartments"
+        }
+      },
+      "Location": {
+        "paragraph": "At one of New Belgrade's most dynamic locations, on Bulevar heroja sa Košara, Belgrade Arbor is taking shape as a contemporary residential and commercial development that seamlessly brings together refined architecture, everyday comfort, and enduring value.",
+        "heading": "Location"
+      },
+      "Around": {
+        "whatsAround": "What's around",
+        "locations": [
+          {
+            "name": "Railway Station",
+            "carDistance": "1 min",
+            "walkDistance": "3 min",
+            "description": "Tošin Bunar is a railway station located in the municipality of Novi Beograd. It is served by BG Voz. The railroad continues to Zemun in one direction, and New Belgrade and Old Belgrade in the other direction. Tošin Bunar railway station consists of 2 railway tracks with 2 side platforms.",
+            "image": "/home/around/tosin.webp"
+          },
+          {
+            "name": "Savremena Elementary School",
+            "carDistance": "1 min",
+            "walkDistance": "2 min",
+            "description": "Savremena Elementary School is a part of an education system unique in the region, with over 20 years' experience. It was built on the foundation of Savremena International School, whose results serve as the best proof of their leadership position at all levels of education.",
+            "image": "/home/around/savremena.webp"
+          },
+          {
+            "name": "West 65",
+            "carDistance": "1 min",
+            "walkDistance": "3 min",
+            "description": "West 65 is a modern residential and business complex located in New Belgrade's Block 65, known for its luxury apartments, shopping center, and a 155-meter skyscraper tower. The complex includes multiple residential buildings, pedestrian areas, restaurants, shops, and recreational facilities, all positioned in a well-connected part of the city.",
+            "image": "/home/around/west.webp"
+          },
+          {
+            "name": "Airport City",
+            "carDistance": "2 min",
+            "walkDistance": "4 min",
+            "description": "Airport City Belgrade is the largest business and commercial complex in Belgrade. It consists mainly of modern office buildings that host international companies, restaurants, cafes, shops, and other business-related services. Developed as one of the first modern business parks in Serbia, Airport City has become an important corporate and economic hub in Belgrade.",
+            "image": "/home/around/airportcity.webp"
+          },
+          {
+            "name": "Hangar Food Market",
+            "carDistance": "2 min",
+            "walkDistance": "4 min",
+            "description": "Hangar Food Market at Airport City Belgrade is a modern food and social hub that brings together a variety of local and international cuisines in one vibrant space. With its contemporary design and lively atmosphere, it has become a popular destination for business meetings, casual dining, and after-work gatherings.",
+            "image": "/home/around/hangar.webp"
+          },
+          {
+            "name": "Airport Nikola Tesla",
+            "carDistance": "9 min",
+            "walkDistance": null,
+            "description": "Nikola Tesla Airport, officially Belgrade Nikola Tesla Airport, is the main international airport in Serbia. It serves as the country's busiest airport and the primary hub for Air Serbia, connecting Belgrade with destinations across Europe, Middle East, North America, and other regions. Named after the famous Serbian-American inventor Nikola Tesla, the airport has undergone major modernization and expansion in recent years to support growing passenger traffic.",
+            "image": "/home/around/aerodrom.webp"
+          }
+        ]
+      },
+      "Residence": {
+        "heading": "Residences",
+        "paragraph": "Designed with contemporary living in mind, each apartment at Belgrade Arbor balances functionality, comfort, and aesthetics. Open-plan layouts, excellent natural light, refined materials, and carefully considered details create spaces that feel both welcoming and enduring."
+      },
+      "ResidenceOptions": {
+        "residenceTypes": [
+          {
+            "name": "Studio",
+            "unitsAvailable": 80,
+            "withoutLivingRoom": false,
+            "images": [
+              "/home/residences-options/1.webp",
+              "/home/residences-options/2.webp"
+            ]
+          },
+          {
+            "name": "One Bedroom",
+            "unitsAvailable": 22,
+            "withoutLivingRoom": true,
+            "images": [
+              "/home/residences-options/3.webp",
+              "/home/residences-options/4.webp"
+            ]
+          },
+          {
+            "name": "Two Bedroom",
+            "unitsAvailable": 78,
+            "withoutLivingRoom": false,
+            "images": [
+              "/home/residences-options/5.webp",
+              "/home/residences-options/6.webp",
+              "/home/residences-options/8.webp"
+            ]
+          },
+          {
+            "name": "Three Bedroom",
+            "unitsAvailable": 16,
+            "withoutLivingRoom": false,
+            "images": [
+              "/home/residences-options/9.webp",
+              "/home/residences-options/10.webp",
+              "/home/residences-options/7.webp"
+            ]
+          },
+          {
+            "name": "Four Bedroom",
+            "unitsAvailable": 12,
+            "withoutLivingRoom": false,
+            "images": [
+              "/home/residences-options/11.webp",
+              "/home/residences-options/12.webp"
+            ]
+          }
+        ],
+        "viewAll": "View all",
+        "unitsAvailable": "units available",
+        "cta": "Submit a request",
+        "tag": "Residences"
+      },
+      "BusinessSpaces": {
+        "heading": "Office spaces and retails",
+        "paragraph": "Business spaces and retail units at Belgrade Arbor are designed for companies of all sizes that see their business address as more than just a location—it is a reflection of their identity, reputation, and long-term vision."
+      },
+      "BusinessSpacesOptions": {
+        "heading": "Business spaces",
+        "cta": "Find out more",
+        "officeSpaces": "retail and hospitality units",
+        "businessSpaces": [
+          {
+            "name": "Wing A",
+            "unitsAvailable": 11,
+            "description": "Adaptable to various types of businesses, with an optimal layout and natural lighting that fosters a productive work atmosphere."
+          },
+          {
+            "name": "Wing B",
+            "unitsAvailable": 11,
+            "description": "Comfortable and functional, suitable for offices, coworking, or showrooms, with easy access and a professional environment."
+          },
+          {
+            "name": "Wing V",
+            "unitsAvailable": 9,
+            "description": "Located along an impressive, representative entrance with a glass curtain wall. This business wing contains no residential units, offering business tenants an added level of privacy and a professional setting."
+          },
+          {
+            "name": "Retail",
+            "unitsAvailable": 18,
+            "description": "Belgrade Arbor complex features 18 retail and hospitality units distributed evenly across Wing A and Wing B. All premises are situated on the ground floor at the building's front, ensuring maximum visibility and direct street access."
+          }
+        ]
+      },
+      "Roots": {
+        "tag": "The way of living",
+        "heading": "Your roots",
+        "description": "In Belgrade Arbor, each residence is crafted not merely for living, but as a space that evolves alongside you",
+        "cta": "Explore residences"
+      },
+      "Amenities": {
+        "tag": "WHAT SETS US APART",
+        "heading": "Amenities",
+        "description": "Belgrade Arbor is more than a residence. It features two private gyms, two exclusive rooftop parks for residents and their guests, and a top-floor café-restaurant. These are curated spaces for unwinding and socializing a true sanctuary from the urban hustle, right at your doorstep."
+      },
+      "AmenitiesOptions": {
+        "heading": "Amenities",
+        "amenitiesTypes": [
+          {
+            "name": "Rooftop",
+            "description": "A place designed for an active and balanced lifestyle. A modernly equipped space that allows you to stay dedicated to yourself and your routines, with the comfort provided by life within the Belgrade Arbor complex.",
+            "images": [
+              "/home/amenities-options/rooftop.webp"
+            ]
+          },
+          {
+            "name": "Private fitness space",
+            "description": "Your personal space for movement and balance. Designed in line with modern living, the in-house gym lets you stay focused on yourself, without leaving the complex and without distractions.",
+            "images": [
+              "/home/amenities-options/fitness.webp"
+            ]
+          },
+          {
+            "name": "Garage",
+            "description": "Coming home begins without searching for a space. Spread across three underground levels, the garage offers security, privacy and everyday comfort, with your vehicle always within reach, protected and available at any moment, without leaving the complex.",
+            "images": [
+              "/home/amenities-options/parking.webp"
+            ]
+          },
+          {
+            "name": "Restaurant",
+            "description": "A place for favourite rituals and moments of pause. Set on the top, recessed floor with a panoramic view of New Belgrade, the restaurant lets you enjoy good company and refined flavours, away from the city bustle, just steps from your home.",
+            "images": [
+              "/home/amenities-options/interior.webp"
+            ]
+          }
+        ]
+      },
+      "Horizontal": {
+        "heading": "View from above"
+      },
+      "Installment": {
+        "heading": "Installment plan",
+        "phase1": "Pre-contract",
+        "phase2": "Zero level",
+        "phase3": "Structure completed",
+        "phase4": "Building 80% complete",
+        "phase5": "Technical acceptance",
+        "cta": "Building permit"
+      }
+    },
+    "Header": {
+      "menu": "Menu",
+      "cta": "Inquire",
+      "links": {
+        "home": "Home",
+        "3d": "3D Experience",
+        "residences": "Residences",
+        "business": "Business",
+        "retailSpaces": "Retail Spaces",
+        "location": "Location",
+        "amenities": "Amenities",
+        "contact": "Contact",
+        "about": "About the investor"
+      }
+    },
+    "Footer": {
+      "heading": "JOIN THE WORLD OF BELGRADE ARBOR",
+      "subscribeText": "Subscribe to join our community and stay up to date.",
+      "firstName": "First name*",
+      "lastName": "Last name*",
+      "email": "Email*",
+      "consent": "I consent to my information being collected in accordance with the Belgrade Arbor Privacy policy",
+      "submit": "Let's begin",
+      "privacyPolicy": "Privacy policy",
+      "disclaimer": "Disclaimer: Upon completion of the project's materialization, minor deviations in the appearance of the facade or architectural details may occur compared to the presented renderings. The room numbering has been carried out in accordance with the property registration system of the Republic of Serbia.",
+      "copyright": "All Rights Reserved.",
+      "brand": "Belgrade Arbor",
+      "contact": "For direct inquiries, our team is available at"
+    },
+    "NotFoundPage": {
+      "heading": "Page not found",
+      "subheading": "The page you're looking for doesn't exist",
+      "tag": "SORRY. The page you're looking for doesn't exist. HOWEVER, YOU CAN TAKE A MOMENT AND HIT BACK TO HOME WHENEVER YOU'RE READY",
+      "cta": "BACK TO HOMEPAGE"
+    },
+    "Metadata": {
+      "site": {
+        "title": "Belgrade Arbor",
+        "titleTemplate": "%s | Belgrade Arbor",
+        "siteName": "Belgrade Arbor",
+        "description": "Belgrade Arbor is a contemporary residential and business complex on Bulevar heroja sa Košara in New Belgrade, developed by Perose Property Group."
+      },
+      "home": {
+        "title": "Belgrade Arbor | Residential & Business Complex in New Belgrade",
+        "description": "Discover Belgrade Arbor - premium apartments and business spaces in New Belgrade. Explore residences, amenities, location, and availability."
+      },
+      "contact": {
+        "title": "Contact",
+        "description": "Contact Belgrade Arbor about apartments and business spaces in New Belgrade. Submit a request or schedule a callback - our team will respond shortly."
+      },
+      "business": {
+        "title": "Business Spaces",
+        "description": "Office and retail spaces at Belgrade Arbor in New Belgrade. A prestigious address with flexible layouts and excellent connectivity for your company."
+      },
+      "aboutInvestor": {
+        "title": "About the Investor",
+        "description": "Learn about Perose Property Group, the developer behind Belgrade Arbor and residential and commercial real estate projects across Serbia."
+      },
+      "threeD": {
+        "title": "3D Experience",
+        "description": "Explore Belgrade Arbor in 3D. Navigate the complex, filter apartments and business units, and find the space that fits your lifestyle or business."
+      },
+      "residences": {
+        "title": "Residences",
+        "description": "Browse apartments at Belgrade Arbor in New Belgrade - from studios to three-bedroom homes with refined architecture, natural light, and premium amenities."
+      },
+      "retailSpaces": {
+        "title": "Retail & Business Spaces",
+        "description": "Retail and office units at Belgrade Arbor. High visibility, street access, and flexible layouts in the heart of New Belgrade."
+      },
+      "privacyPolicy": {
+        "title": "Privacy Policy",
+        "description": "Privacy policy and personal data processing notice for Belgrade Arbor - how we collect, use, protect, and retain your information."
+      },
+      "residenceDetail": {
+        "title": "Apartment {name}",
+        "description": "Apartment {name} at Belgrade Arbor in New Belgrade. View layout, floor plan, features, and submit an inquiry for this residence."
+      },
+      "retailDetail": {
+        "title": "Business space {name}",
+        "description": "Business space {name} at Belgrade Arbor in New Belgrade. View size, floor, layout, and request details about this unit."
+      }
+    },
+    "PrivacyPolicy": {
+      "heading": "Privacy policy",
+      "content": "$1b"
+    }
+  },
+  "now": "$undefined",
+  "timeZone": "UTC",
+  "children": [
+    "$L1c",
+    "$L1d"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "menu": "Menu",
+  "cta": "Inquire",
+  "links": {
+    "home": "Home",
+    "3d": "3D Experience",
+    "residences": "Residences",
+    "business": "Business",
+    "retailSpaces": "Retail Spaces",
+    "location": "Location",
+    "amenities": "Amenities",
+    "contact": "Contact",
+    "about": "About the investor"
+  }
+}
