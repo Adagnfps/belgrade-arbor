@@ -95,11 +95,11 @@ export function Header({ onOpenInquire }: HeaderProps) {
                 className="group relative inline-flex h-9 items-center justify-center rounded-full border border-green px-5 text-xs uppercase tracking-wider text-sand transition-all hover:bg-green/20"
               >
                 <span className="relative z-1 block overflow-hidden leading-tight">
-                  <span className="flex items-center gap-3 transition-transform duration-500 ease-in-out group-hover:-translate-y-full">
+                  <span className="flex items-center justify-center gap-3 transition-all duration-500 ease-in-out group-hover:-translate-y-full group-hover:opacity-0">
                     <span>Inquire</span>
                     <ArrowRightIcon className="text-green h-2.25 w-6 transition-colors group-hover:text-golden" />
                   </span>
-                  <span className="absolute top-0 left-0 flex w-full items-center justify-between gap-3 translate-y-full text-cream transition-transform duration-500 ease-in-out group-hover:translate-y-0">
+                  <span className="pointer-events-none absolute inset-0 flex items-center justify-center gap-3 translate-y-full opacity-0 text-cream transition-all duration-500 ease-in-out group-hover:translate-y-0 group-hover:opacity-100">
                     <span>Inquire</span>
                     <ArrowRightIcon className="text-golden h-2.25 w-6" />
                   </span>
@@ -123,12 +123,12 @@ export function Header({ onOpenInquire }: HeaderProps) {
                         scrollTo(item.href);
                       }
                     }}
-                    className="group relative w-full overflow-hidden text-center py-1 transition-colors"
+                    className="group relative w-full overflow-hidden text-center transition-colors"
                   >
-                    <span className="block text-2xl font-serif font-light text-cream-dark transition-transform duration-300 group-hover:-translate-y-full">
+                    <span className="block py-1.5 text-2xl font-serif font-light text-cream-dark leading-tight transition-all duration-300 ease-in-out group-hover:-translate-y-full group-hover:opacity-0">
                       {item.label}
                     </span>
-                    <span className="absolute inset-0 flex items-center justify-center text-2xl font-serif italic text-golden translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+                    <span className="pointer-events-none absolute inset-0 block py-1.5 text-2xl font-serif italic text-golden leading-tight translate-y-full opacity-0 transition-all duration-300 ease-in-out group-hover:translate-y-0 group-hover:opacity-100">
                       {item.label}
                     </span>
                   </a>
@@ -146,11 +146,11 @@ export function Header({ onOpenInquire }: HeaderProps) {
                   className="group relative mx-auto flex h-11 w-full max-w-xs items-center justify-center rounded-full border border-green px-5 text-xs uppercase tracking-wider text-sand transition-all hover:bg-green/20"
                 >
                   <span className="relative z-1 block overflow-hidden leading-tight">
-                    <span className="flex items-center gap-3 transition-transform duration-500 ease-in-out group-hover:-translate-y-full">
+                    <span className="flex items-center justify-center gap-3 transition-all duration-500 ease-in-out group-hover:-translate-y-full group-hover:opacity-0">
                       <span>Inquire</span>
                       <ArrowRightIcon className="text-green h-2.25 w-6 transition-colors group-hover:text-golden" />
                     </span>
-                    <span className="absolute top-0 left-0 flex w-full items-center justify-between gap-3 translate-y-full text-cream transition-transform duration-500 ease-in-out group-hover:translate-y-0">
+                    <span className="pointer-events-none absolute inset-0 flex items-center justify-center gap-3 translate-y-full opacity-0 text-cream transition-all duration-500 ease-in-out group-hover:translate-y-0 group-hover:opacity-100">
                       <span>Inquire</span>
                       <ArrowRightIcon className="text-golden h-2.25 w-6" />
                     </span>
