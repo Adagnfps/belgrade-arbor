@@ -227,3 +227,27 @@ export function CubeIcon({ className = "w-6 h-6", ...props }: IconProps) {
     </svg>
   );
 }
+
+export function ArrowRightIcon({ className = "w-6 h-2.5", ...props }: IconProps) {
+  return (
+    <svg
+      viewBox="0 0 25 10"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path
+        d="M0.5 5L24.5 5"
+        stroke="currentColor"
+        strokeLinecap="round"
+      />
+      <path
+        d="M19.5 0.5L24.5 5L19.5 9.5"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="bevel"
+      />
+    </svg>
+  );
+}

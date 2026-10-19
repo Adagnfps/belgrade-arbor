@@ -18,8 +18,8 @@ export function RootsSection() {
 
     mm.add(
       {
-        isDesktop: "(min-width: 769px)",
-        isMobile: "(max-width: 768px)",
+        isDesktop: "(min-width: 768px)",
+        isMobile: "(max-width: 767.98px)",
       },
       (context) => {
         const { isDesktop, isMobile } = context.conditions as {

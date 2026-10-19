@@ -33,7 +33,9 @@ export function LenisProvider({ children }: { children: React.ReactNode }) {
     }
 
     const instance = new Lenis({
-      duration: 1.8,
+      duration: 2,
+      smoothWheel: true,
+      syncTouch: false,
     });
 
     lenisRef.current = instance;

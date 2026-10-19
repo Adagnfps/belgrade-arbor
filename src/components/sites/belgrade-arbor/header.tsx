@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useLenis } from "./lenis-provider";
-import { LogoSymbolIcon } from "./icons";
+import { LogoSymbolIcon, ArrowRightIcon } from "./icons";
 
 interface HeaderProps {
   onOpenInquire?: () => void;
@@ -88,57 +88,21 @@ export function Header({ onOpenInquire }: HeaderProps) {
             </Link>
 
             {/* Inquire Action Button */}
-            <div className="relative z-10 flex flex-1 justify-end">
+            <div className="relative z-10 flex flex-1 justify-end max-md:hidden">
               <button
                 type="button"
                 onClick={onOpenInquire}
-                className="group relative inline-flex h-9 items-center justify-center overflow-hidden rounded-full border border-green px-5 text-xs uppercase tracking-wider text-sand transition-all hover:bg-green/30"
+                className="group relative inline-flex h-9 items-center justify-center rounded-full border border-green px-5 text-xs uppercase tracking-wider text-sand transition-all hover:bg-green/20"
               >
-                <span className="flex items-center gap-3 transition-transform duration-300 group-hover:-translate-y-full">
-                  <span>Inquire</span>
-                  <svg
-                    width="18"
-                    height="8"
-                    viewBox="0 0 25 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="text-green"
-                  >
-                    <path
-                      d="M0.5 5L24.5 5"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M19.5 0.5L24.5 5L19.5 9.5"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="bevel"
-                    />
-                  </svg>
-                </span>
-                <span className="absolute flex items-center gap-3 translate-y-full transition-transform duration-300 group-hover:translate-y-0 text-cream">
-                  <span>Inquire</span>
-                  <svg
-                    width="18"
-                    height="8"
-                    viewBox="0 0 25 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="text-golden"
-                  >
-                    <path
-                      d="M0.5 5L24.5 5"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M19.5 0.5L24.5 5L19.5 9.5"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="bevel"
-                    />
-                  </svg>
+                <span className="relative z-1 block overflow-hidden leading-tight">
+                  <span className="flex items-center gap-3 transition-transform duration-500 ease-in-out group-hover:-translate-y-full">
+                    <span>Inquire</span>
+                    <ArrowRightIcon className="text-green h-2.25 w-6 transition-colors group-hover:text-golden" />
+                  </span>
+                  <span className="absolute top-0 left-0 flex w-full items-center justify-between gap-3 translate-y-full text-cream transition-transform duration-500 ease-in-out group-hover:translate-y-0">
+                    <span>Inquire</span>
+                    <ArrowRightIcon className="text-golden h-2.25 w-6" />
+                  </span>
                 </span>
               </button>
             </div>
@@ -170,6 +134,29 @@ export function Header({ onOpenInquire }: HeaderProps) {
                   </a>
                 ))}
               </nav>
+
+              {/* Mobile Menu Inquire CTA */}
+              <div className="mt-6 flex w-full justify-center max-md:block">
+                <button
+                  type="button"
+                  onClick={() => {
+                    closeMenu();
+                    onOpenInquire?.();
+                  }}
+                  className="group relative mx-auto flex h-11 w-full max-w-xs items-center justify-center rounded-full border border-green px-5 text-xs uppercase tracking-wider text-sand transition-all hover:bg-green/20"
+                >
+                  <span className="relative z-1 block overflow-hidden leading-tight">
+                    <span className="flex items-center gap-3 transition-transform duration-500 ease-in-out group-hover:-translate-y-full">
+                      <span>Inquire</span>
+                      <ArrowRightIcon className="text-green h-2.25 w-6 transition-colors group-hover:text-golden" />
+                    </span>
+                    <span className="absolute top-0 left-0 flex w-full items-center justify-between gap-3 translate-y-full text-cream transition-transform duration-500 ease-in-out group-hover:translate-y-0">
+                      <span>Inquire</span>
+                      <ArrowRightIcon className="text-golden h-2.25 w-6" />
+                    </span>
+                  </span>
+                </button>
+              </div>
 
               {/* Menu Footer */}
               <div className="mt-8 pt-6 border-t border-white/10 flex flex-col items-center gap-4 text-xs text-cream-dark">
