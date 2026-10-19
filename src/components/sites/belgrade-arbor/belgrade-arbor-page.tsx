@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { LenisProvider } from "./lenis-provider";
 import { Header } from "./header";
 import { AwwwardsRibbon } from "./awwwards";
+import { HeroVideo } from "./hero-video";
 import { Introduction } from "./introduction";
 import { LocationSection } from "./location";
 import { AroundSection } from "./around";
@@ -25,52 +27,57 @@ export function BelgradeArborPage() {
   };
 
   return (
-    <div className="relative min-h-screen bg-vanilla text-pine-green selection:bg-golden/30 selection:text-pine-green font-sans">
-      {/* Floating Header */}
-      <Header onOpenInquire={() => handleOpenInquire("General Inquiry")} />
+    <LenisProvider>
+      <div className="relative min-h-screen bg-vanilla text-pine-green selection:bg-golden/30 selection:text-pine-green font-sans overflow-x-clip">
+        {/* Floating Header */}
+        <Header onOpenInquire={() => handleOpenInquire("General Inquiry")} />
 
-      {/* Floating Awwwards Ribbon */}
-      <AwwwardsRibbon />
+        {/* Floating Awwwards Ribbon */}
+        <AwwwardsRibbon />
 
-      {/* Main Page Flow */}
-      <main>
-        {/* Section 1: Introduction */}
-        <Introduction onExplore3D={() => handleOpenInquire("3D Experience")} />
+        {/* Main Page Flow with Authentic Scrollytelling */}
+        <main>
+          {/* Hero Video with Preloader & Title */}
+          <HeroVideo src="/home/hero.mp4" mobileSrc="/home/hero-m.webm" />
 
-        {/* Section 2: Location */}
-        <LocationSection />
+          {/* Section 1: Introduction (900vh Desktop / 600vh Mobile Scrollytelling) */}
+          <Introduction onExplore3D={() => handleOpenInquire("3D Experience")} />
 
-        {/* Section 3: Around */}
-        <AroundSection />
+          {/* Section 2: Location (Parallax & Video Card Clip Reveal) */}
+          <LocationSection />
 
-        {/* Section 4: Residences & Residence Options */}
-        <ResidencesSection onInquire={handleOpenInquire} />
+          {/* Section 3: Around (Interactive Destination Explorer) */}
+          <AroundSection />
 
-        {/* Section 5: Business Spaces & Retails */}
-        <BusinessSpacesSection onInquire={handleOpenInquire} />
+          {/* Section 4: Residences & Apartment Options */}
+          <ResidencesSection onInquire={handleOpenInquire} />
 
-        {/* Section 6: Roots */}
-        <RootsSection />
+          {/* Section 5: Business Spaces & Wings */}
+          <BusinessSpacesSection onInquire={handleOpenInquire} />
 
-        {/* Section 7: Amenities */}
-        <AmenitiesSection />
+          {/* Section 6: Roots (Mouse Parallax & Leaf Masks) */}
+          <RootsSection />
 
-        {/* Section 8: Horizontal Panoramic Gallery */}
-        <HorizontalGallery />
+          {/* Section 7: Amenities (Parallax Video & Options Showcase) */}
+          <AmenitiesSection />
 
-        {/* Section 9: Installment Plan */}
-        <InstallmentSection />
-      </main>
+          {/* Section 8: Horizontal Panoramic Gallery (Pinned Scrub) */}
+          <HorizontalGallery />
 
-      {/* Section 10: Footer */}
-      <FooterSection />
+          {/* Section 9: Installment Plan (Split Clip Reveals & Parallax) */}
+          <InstallmentSection />
+        </main>
 
-      {/* Inquire Modal Dialog */}
-      <InquireModal
-        isOpen={isInquireOpen}
-        onClose={() => setIsInquireOpen(false)}
-        initialUnit={selectedUnit}
-      />
-    </div>
+        {/* Section 10: Footer (Parallax Foliage & Newsletter) */}
+        <FooterSection />
+
+        {/* Inquire Modal Dialog */}
+        <InquireModal
+          isOpen={isInquireOpen}
+          onClose={() => setIsInquireOpen(false)}
+          initialUnit={selectedUnit}
+        />
+      </div>
+    </LenisProvider>
   );
 }

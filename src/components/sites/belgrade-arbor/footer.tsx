@@ -1,9 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { gsap } from "@/lib/gsap";
 
 export function FooterSection() {
+  const footerRef = useRef<HTMLElement>(null);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -11,6 +13,36 @@ export function FooterSection() {
     consent: false,
   });
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const ctx = gsap.context(() => {
+      gsap.from("#Footer .fadeElement", {
+        opacity: 0,
+        y: "2rem",
+        x: "-2rem",
+        duration: 1,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: "#Footer .wrapper",
+          start: "top 80%",
+        },
+      });
+
+      gsap.to("#Footer .front", {
+        y: "8rem",
+        scrollTrigger: {
+          trigger: "#Footer",
+          start: "top bottom",
+          end: "bottom bottom",
+          scrub: true,
+        },
+      });
+    }, footerRef);
+
+    return () => ctx.revert();
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -22,11 +54,15 @@ export function FooterSection() {
   };
 
   return (
-    <footer id="Footer" className="relative bg-gradient-to-t from-[#8AB6D2] via-[#8AB6D2]/60 to-vanilla pt-24 sm:pt-32 text-pine-green overflow-hidden">
+    <footer
+      ref={footerRef}
+      id="Footer"
+      className="footer-scroller relative bg-gradient-to-t from-[#8AB6D2] via-[#8AB6D2]/60 to-vanilla pt-24 sm:pt-32 text-pine-green overflow-hidden"
+    >
       <div className="wrapper relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          {/* Newsletter Signup Form (Left 5 Cols) */}
-          <div className="lg:col-span-5">
+          {/* Newsletter Signup Form */}
+          <div className="lg:col-span-5 fadeElement">
             <h2 className="heading-2 font-serif text-pine-green uppercase leading-tight">
               JOIN THE WORLD OF BELGRADE ARBOR
             </h2>
@@ -129,8 +165,8 @@ export function FooterSection() {
             )}
           </div>
 
-          {/* Navigation Links (Center 3 Cols) */}
-          <div className="lg:col-span-3 lg:pl-8">
+          {/* Navigation Links */}
+          <div className="lg:col-span-3 lg:pl-8 fadeElement">
             <ul className="space-y-3 font-sans uppercase text-sm tracking-wide">
               <li>
                 <a href="#Introduction" className="hover:text-green transition">
@@ -218,8 +254,8 @@ export function FooterSection() {
             </div>
           </div>
 
-          {/* Disclaimer & Direct Contact (Right 4 Cols) */}
-          <div className="lg:col-span-4 flex flex-col justify-between h-full">
+          {/* Disclaimer & Direct Contact */}
+          <div className="lg:col-span-4 flex flex-col justify-between h-full fadeElement">
             <p className="small text-xs text-pine-green/70 leading-relaxed">
               Disclaimer: Upon completion of the project&apos;s materialization, minor
               deviations in the appearance of the facade or architectural details
@@ -246,8 +282,8 @@ export function FooterSection() {
         </div>
       </div>
 
-      {/* Panoramic Building & Foliage Graphic Silhouette */}
-      <div className="relative w-full mt-16 pointer-events-none select-none">
+      {/* Silhouette Silhouette Graphic with Scrub Parallax */}
+      <div className="front relative w-full mt-16 pointer-events-none select-none will-change-transform">
         <div className="relative w-full aspect-21/9 max-h-[600px] overflow-hidden">
           <Image
             src="/home/footer/front.webp"

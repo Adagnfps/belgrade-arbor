@@ -1,10 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { gsap } from "@/lib/gsap";
+import { CarIcon, WalkIcon } from "./icons";
 
 export function AroundSection() {
+  const sectionRef = useRef<HTMLElement>(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const locations = [
     {
@@ -59,93 +63,156 @@ export function AroundSection() {
 
   const active = locations[selectedIndex];
 
+  // Indicator position calculation
+  const [indicatorStyle, setIndicatorStyle] = useState({ top: 0, height: 0, visible: true });
+
+  useEffect(() => {
+    const el = itemRefs.current[selectedIndex];
+    if (el) {
+      setIndicatorStyle({
+        top: el.offsetTop,
+        height: el.offsetHeight,
+        visible: true,
+      });
+    }
+  }, [selectedIndex]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const ctx = gsap.context(() => {
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: "#Around",
+          start: "top 70%",
+        },
+      }).fromTo(
+        "#Around .reveal-image",
+        { clipPath: "inset(0% 0% 100% 0%)" },
+        { clipPath: "inset(0% 0% 0% 0%)", duration: 1.2, ease: "power2.inOut" }
+      );
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section id="Around" className="relative bg-vanilla text-pine-green py-24 sm:py-32">
+    <section ref={sectionRef} id="Around" className="relative bg-vanilla text-pine-green py-24 sm:py-32">
       <div className="wrapper">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
-          {/* Left Column: Heading and Interactive Destination Cards */}
-          <div className="w-full lg:w-1/2">
-            <span className="small tracking-widest text-golden uppercase font-medium">
+          {/* Left Column: Heading and Authentic Editorial List */}
+          <div className="w-full lg:w-5/12">
+            <p className="kicker uppercase font-mono text-xs tracking-widest text-golden font-medium">
               Connectivity &amp; Lifestyle
-            </span>
-            <h2 className="heading-2 font-serif text-pine-green mt-2 mb-8">
+            </p>
+            <h2 className="heading-2 font-serif text-pine-green mt-2 mb-10 text-4xl sm:text-5xl">
               What&apos;s around
             </h2>
 
-            <div className="space-y-4">
+            {/* List with sliding indicator bar */}
+            <div className="list border-b border-golden/30 relative pt-4 pb-8">
+              {/* Active Indicator Line */}
+              <div
+                className="bg-golden pointer-events-none absolute top-0 -left-4 w-1 rounded-full transition-all duration-300"
+                style={{
+                  height: `${indicatorStyle.height}px`,
+                  transform: `translateY(${indicatorStyle.top}px)`,
+                  opacity: indicatorStyle.visible ? 1 : 0,
+                }}
+              />
+
+              {locations.map((loc, idx) => {
+                const isActive = selectedIndex === idx;
+                return (
+                  <div
+                    key={loc.name}
+                    ref={(el) => {
+                      itemRefs.current[idx] = el;
+                    }}
+                    onClick={() => setSelectedIndex(idx)}
+                    onMouseEnter={() => setSelectedIndex(idx)}
+                    className="group relative cursor-pointer overflow-hidden py-3 transition-colors"
+                  >
+                    {/* Normal static title */}
+                    <p
+                      className={`font-serif text-2xl sm:text-3xl transition-transform duration-500 leading-tight ${
+                        isActive
+                          ? "-translate-y-full text-golden"
+                          : "text-pine-green group-hover:-translate-y-full group-hover:text-golden"
+                      }`}
+                    >
+                      {loc.name}
+                    </p>
+
+                    {/* Italic hover/active reveal */}
+                    <span
+                      className={`font-serif text-2xl sm:text-3xl italic absolute left-0 h-full w-full transition-all duration-500 text-golden leading-tight ${
+                        isActive ? "top-3" : "top-[120%] group-hover:top-3"
+                      }`}
+                    >
+                      {loc.name}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Synchronized Details Pane */}
+            <div className="relative mt-8 min-h-[14rem]">
               {locations.map((loc, idx) => {
                 const isSelected = selectedIndex === idx;
                 return (
                   <div
-                    key={idx}
-                    onClick={() => setSelectedIndex(idx)}
-                    onMouseEnter={() => setSelectedIndex(idx)}
-                    className={`p-6 rounded-2xl cursor-pointer border transition-all duration-300 ${
-                      isSelected
-                        ? "bg-pine-green text-cream border-pine-green shadow-lg"
-                        : "bg-sand/40 border-pine-green/10 hover:border-golden/50 text-pine-green"
-                    }`}
+                    key={`${loc.name}-details`}
+                    className="absolute inset-0 transition-opacity duration-300"
+                    style={{
+                      opacity: isSelected ? 1 : 0,
+                      pointerEvents: isSelected ? "auto" : "none",
+                    }}
                   >
-                    <div className="flex items-center justify-between gap-4">
-                      <h3
-                        className={`font-serif text-xl sm:text-2xl ${
-                          isSelected ? "text-cream" : "text-pine-green"
-                        }`}
-                      >
-                        {loc.name}
-                      </h3>
+                    <p className="kicker uppercase font-mono text-xs tracking-wider text-golden mb-3">
+                      {loc.name}
+                    </p>
 
-                      <div className="flex items-center gap-2 shrink-0">
-                        {loc.carDistance && (
-                          <span
-                            className={`small px-3 py-1 rounded-full text-xs font-mono ${
-                              isSelected
-                                ? "bg-golden/30 text-sand"
-                                : "bg-pine-green/10 text-pine-green"
-                            }`}
-                          >
-                            🚗 {loc.carDistance}
-                          </span>
-                        )}
-                        {loc.walkDistance && (
-                          <span
-                            className={`small px-3 py-1 rounded-full text-xs font-mono ${
-                              isSelected
-                                ? "bg-golden/30 text-sand"
-                                : "bg-pine-green/10 text-pine-green"
-                            }`}
-                          >
-                            🚶 {loc.walkDistance}
-                          </span>
-                        )}
-                      </div>
+                    <div className="divide-x divide-golden/40 flex items-center mb-4">
+                      {loc.carDistance && (
+                        <div className="flex items-center gap-2 pr-4 text-sm font-sans font-medium text-pine-green">
+                          <CarIcon className="text-golden h-6 w-6" />
+                          <span>{loc.carDistance}</span>
+                        </div>
+                      )}
+                      {loc.walkDistance && (
+                        <div className="flex items-center gap-2 pl-4 text-sm font-sans font-medium text-pine-green">
+                          <WalkIcon className="text-golden h-6 w-6" />
+                          <span>{loc.walkDistance}</span>
+                        </div>
+                      )}
                     </div>
 
-                    {isSelected && (
-                      <p className="mt-4 text-sand/90 text-sm leading-relaxed animate-in fade-in duration-300">
-                        {loc.description}
-                      </p>
-                    )}
+                    <p className="paragraph text-pine-green/80 text-sm leading-relaxed font-sans">
+                      {loc.description}
+                    </p>
                   </div>
                 );
               })}
             </div>
           </div>
 
-          {/* Right Column: Sticky Showcase Photography */}
-          <div className="w-full lg:w-1/2 lg:sticky lg:top-28">
-            <div className="relative aspect-4/3 w-full overflow-hidden rounded-3xl border border-pine-green/15 shadow-2xl">
+          {/* Right Column: Sticky Showcase Photography with clipPath Reveal */}
+          <div className="w-full lg:w-7/12 lg:sticky lg:top-28">
+            <div className="reveal-image relative aspect-16/10 w-full overflow-hidden rounded-[1.5rem] border border-pine-green/10 shadow-2xl">
               <Image
                 src={active.image}
                 alt={active.name}
                 fill
-                className="object-cover transition-all duration-700 ease-out hover:scale-105"
+                priority
+                className="object-cover transition-all duration-700 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between text-cream">
                 <span className="font-serif text-2xl drop-shadow">{active.name}</span>
-                <span className="text-xs font-mono tracking-widest uppercase bg-pine-green/80 px-3 py-1.5 rounded-full border border-white/20">
-                  {selectedIndex + 1} / {locations.length}
+                <span className="text-xs font-mono tracking-widest uppercase bg-pine-green/80 px-3.5 py-1.5 rounded-full border border-white/20">
+                  0{selectedIndex + 1} / 0{locations.length}
                 </span>
               </div>
             </div>
