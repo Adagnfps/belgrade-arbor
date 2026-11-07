@@ -251,3 +251,27 @@ export function ArrowRightIcon({ className = "w-6 h-2.5", ...props }: IconProps)
     </svg>
   );
 }
+
+export function ArrowDownIcon({ className = "h-6 w-2.5", ...props }: IconProps) {
+  return (
+    <svg
+      viewBox="0 0 10 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path
+        d="M5 0.5V24.5"
+        stroke="currentColor"
+        strokeLinecap="round"
+      />
+      <path
+        d="M0.5 19.5L5 24.5L9.5 19.5"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="bevel"
+      />
+    </svg>
+  );
+}

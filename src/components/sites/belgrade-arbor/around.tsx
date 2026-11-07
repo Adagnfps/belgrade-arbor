@@ -135,10 +135,10 @@ export function AroundSection() {
                   >
                     {/* Normal static title */}
                     <p
-                      className={`font-serif text-2xl sm:text-3xl py-3.5 leading-tight transition-all duration-500 ease-in-out select-none ${
+                      className={`font-serif text-2xl sm:text-3xl py-4 leading-none transition-all duration-500 ease-in-out select-none ${
                         isActive
-                          ? "-translate-y-full opacity-0 text-golden pointer-events-none"
-                          : "text-pine-green translate-y-0 opacity-100 group-hover:-translate-y-full group-hover:opacity-0 group-hover:text-golden"
+                          ? "-translate-y-[140%] pointer-events-none"
+                          : "text-pine-green translate-y-0 group-hover:-translate-y-[140%]"
                       }`}
                     >
                       {loc.name}
@@ -146,10 +146,10 @@ export function AroundSection() {
 
                     {/* Italic hover/active reveal */}
                     <span
-                      className={`font-serif text-2xl sm:text-3xl italic absolute inset-0 py-3.5 leading-tight transition-all duration-500 ease-in-out text-golden select-none pointer-events-none ${
+                      className={`font-serif text-2xl sm:text-3xl italic absolute left-0 w-full py-4 leading-none transition-all duration-500 ease-in-out text-golden select-none pointer-events-none ${
                         isActive
-                          ? "translate-y-0 opacity-100"
-                          : "translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100"
+                          ? "top-0"
+                          : "top-[140%] group-hover:top-0"
                       }`}
                     >
                       {loc.name}
