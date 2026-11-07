@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { LenisProvider } from "./lenis-provider";
 import { Header } from "./header";
-import { AwwwardsRibbon } from "./awwwards";
 import { HeroVideo } from "./hero-video";
 import { Introduction } from "./introduction";
 import { LocationSection } from "./location";
@@ -34,9 +33,6 @@ export function BelgradeArborPage() {
       <div className="relative min-h-screen bg-vanilla text-pine-green selection:bg-golden/30 selection:text-pine-green font-sans overflow-x-clip">
         {/* Floating Header */}
         <Header onOpenInquire={() => handleOpenInquire("General Inquiry")} />
-
-        {/* Floating Awwwards Ribbon */}
-        <AwwwardsRibbon />
 
         {/* Main Page Flow with Authentic Scrollytelling Sections (1:1 with Live Site) */}
         <main>
